@@ -61,16 +61,14 @@ public class Stack<T> {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("[");
 
         for(int i = 0; i < size-1; i++){
             sb.append(vector[i]);
-            sb.append(", ");
+            sb.append(" ");
         }
 
         if(size > 0){
             sb.append(vector[size-1]);
-            sb.append("]");
         }
 
         return sb.toString();
